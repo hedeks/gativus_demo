@@ -85,7 +85,7 @@ body {
   max-width: 100%;
   height: 600vh;
   background: #f9f9f9;
-  transition: opacity 0.4s cubic-bezier(0.705, 0.01, 0, 0.915);
+  transition: opacity 0.5s cubic-bezier(0.705, 0.01, 0, 0.915);
   /* animation-name: scaleProgress; */
   /* animation-timing-function: linear; */
   /* animation-timeline: scroll(root); */
@@ -185,8 +185,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  /* overflow-y: auto; */
-  /* pointer-events: none;  */
   z-index: 3;
 }
 .main-gativus-view {
@@ -201,54 +199,65 @@ body {
   z-index: 2;
   box-sizing: border-box;
 }
+
+/* First Main Page */
 .what-is-gativus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   height: calc(100vh - 83px);
+  position: absolute;
+  padding: 10px;
 }
+
 .what-is-gativus-second {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100vh - 83px);
+  gap: 10px;
+  padding: 10px;
+  height: calc(100vh - 123px);
   width: 100%;
 }
-.main-gativus-view-title {
+.gativus-description {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  filter: drop-shadow(0 0 2px #bababa);
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Poppins-Medium";
+  letter-spacing: 6px;
+  font-weight: 400;
+  border-bottom: 1px solid #bababa;
+}
+.second-gativus-view-title {
   padding: 10px 0;
   line-height: 1;
+  margin: 0;
   border-top: 1px solid #bababa;
-  border-bottom: 1px solid #bababa;
   width: fit-content;
   filter: drop-shadow(0 0 2px #bababa);
   font-family: "Poppins-Medium";
   font-size: 60px;
   letter-spacing: 6px;
 }
-.second-gativus-view-title {
-  padding: 10px 0;
-  line-height: 1;
-  border-top: 1px solid #bababa;
-  border-bottom: 1px solid #bababa;
-  width: fit-content;
-  filter: drop-shadow(0 0 2px #bababa);
-  font-family: "Poppins-Medium";
-  font-size: 40px;
-  letter-spacing: 6px;
+.gativus-title-description {
+  display: flex;
+  flex-direction: column;
 }
 .main-gativus-view-title-container {
   display: flex;
   gap: 20px;
   width: fit-content;
   align-items: center;
-  position: absolute;
 }
 .second-gativus-view-title-container {
   display: flex;
   gap: 20px;
   width: fit-content;
   align-items: center;
-  position: absolute;
 }
 .main-gativus-view-icon {
   filter: drop-shadow(0 0 2px #bababa);
@@ -293,14 +302,16 @@ body {
 }
 .second-gativus-view-section {
   border: 1px solid #c8c8c8;
-  width: 1571px;
-  height: 700px;
-  margin: auto 0px 50px 0;
+  width: fit-content;
+  height: fit-content;
+  max-width: calc(100% - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   border-radius: 15px;
   filter: drop-shadow(0 0 1px #c8c8c8);
+  pointer-events: all;
 }
 .second-gativus-view-section-upper-part {
   height: 56px;
@@ -313,12 +324,16 @@ body {
   border-radius: 15px 15px 0 0;
 }
 #app {
-  transition: all 0.4s cubic-bezier(0.705, 0.01, 0, 0.915);
+  transition: all 0.5s cubic-bezier(0.705, 0.01, 0, 0.915);
 }
 .second-gativus-view-section-main-part {
   background-color: white;
-  height: 100%;
-  width: 100%;
+  max-width: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 .second-gativus-view-section-bottom-part {
   height: 56px;
@@ -334,30 +349,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
-  padding: 10px 10px 10px 5px;
 }
 .second-gativus-view-section-main-part-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 5px 10px 10px 10px;
 }
 .wtg_view_item {
   border: 1px solid #e9e9e9;
   box-shadow: 0px 0px 2px 0px rgba(34, 60, 80, 0.2);
   border-radius: 10px;
-  height: 250px;
-  width: fit-content;
+  height: 230px;
+  /* width: fit-content; */
+  width: 380px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.705, 0.01, 0, 0.915);
 }
-.wtg_view_description {
+/* .wtg_view_description {
   width: 300px;
-}
+} */
 .wtg_view_img_container {
   height: 100px;
   width: 100%;
@@ -376,13 +394,13 @@ body {
   background-image: url("../img/logo.jpg");
 }
 .wtg_gnet {
-  background-image: url("../img/gnet.jpg");
+  background-image: url("../img/gnet-second-view.png");
 }
 .wtg_gate {
   background-image: url("../img/gate.jpg");
 }
-.wtg_gaar {
-  background-image: url("../img/gaar.jpg");
+.wtg_gnet_spec {
+  background-image: url("../img/gnet-main.png");
 }
 .gate_gaar_container {
   display: flex;
@@ -400,8 +418,8 @@ body {
   box-shadow: 0px 0px 1px 0px rgba(34, 60, 80, 0.2);
   background: rgb(237, 237, 237);
   border-radius: 10px;
-  width: 528px;
-  height: 250px;
+  width: 650px;
+  height: 230px;
   background: linear-gradient(
     90deg,
     rgba(237, 237, 237, 1) 0%,
@@ -429,12 +447,12 @@ body {
 /*  Third Page  Gativus - network */
 
 .gativus-network-page-container {
-  padding: 5px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 20px);
 }
 
 .gativus-network-title-container {
@@ -443,7 +461,6 @@ body {
   gap: 10px;
   width: fit-content;
   align-items: center;
-  margin-top: 30px;
 }
 .gativus-network-title-container-sub {
   display: flex;
@@ -509,8 +526,9 @@ body {
 }
 .gativus-network-card-main-description {
   font-size: 22px;
-  width: 50%;
+  width: calc(50% - 20px);
   text-align: center;
+  padding: 10px;
 }
 .gtom-gnet-nddis {
   width: 50%;
@@ -659,9 +677,9 @@ body {
   flex-direction: column;
   gap: 20px;
   width: 80%;
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   border-radius: 10px;
-  border: 1px solid #C8C8C8;
+  border: 1px solid #c8c8c8;
   box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.2);
 }
 .nddi-sections-title {
@@ -715,12 +733,13 @@ body {
   margin: 0;
   font-size: 20px;
 }
-.nddi-vbs-info-left{
+.nddi-vbs-info-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.v-section-container, .b-section-container {
+.v-section-container,
+.b-section-container {
   padding: 40px;
   width: calc(100% - 80px);
   display: flex;
@@ -729,7 +748,8 @@ body {
   justify-content: center;
   font-size: 18px;
 }
-.v-section-left, .b-section-left {
+.v-section-left,
+.b-section-left {
   display: flex;
   flex-direction: column;
   border: 1px solid #c8c8c8;
@@ -738,14 +758,16 @@ body {
   box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.2);
   height: 850px;
 }
-.v-section-right, .b-section-right {
+.v-section-right,
+.b-section-right {
   display: flex;
   flex-direction: column;
   gap: 40px;
   width: 380px;
   padding: 20px;
 }
-.v-section-left-image, .b-section-left-image {
+.v-section-left-image,
+.b-section-left-image {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 9px;
@@ -753,7 +775,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.v-section-right-image, .b-section-right-image{
+.v-section-right-image,
+.b-section-right-image {
   display: flex;
   justify-content: space-around;
   background-color: #f9f9f9;
@@ -767,7 +790,9 @@ body {
   justify-content: space-around;
 }
 
-.v-component, .b-package, .b-yota {
+.v-component,
+.b-package,
+.b-yota {
   border: 1px solid #c8c8c8;
   padding: 20px;
   border-radius: 9px;
@@ -784,6 +809,134 @@ body {
   flex-direction: column;
 }
 
-.v-component-description, .b-component-description{
+.v-component-description,
+.b-component-description {
   font-size: 16px;
+}
+
+.hovered {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px 2px rgba(109, 109, 109, 0.2);
+}
+
+/* Common styles */
+
+.gativus-page-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 107px);
+}
+.gativus-title-40px {
+  padding: 10px 0;
+  line-height: 1;
+  margin: 0;
+  border-top: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  width: fit-content;
+  filter: drop-shadow(0 0 2px #bababa);
+  font-family: "Poppins-Medium";
+  font-size: 40px;
+  letter-spacing: 6px;
+}
+.gativus-28px-description {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  filter: drop-shadow(0 0 2px #bababa);
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Poppins-Medium";
+  letter-spacing: 6px;
+  font-weight: 400;
+  border-bottom: 1px solid #bababa;
+}
+.gativus-card-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+.fit-content-gativus-network-card {
+  width: 90%;
+  border: 1px solid #c8c8c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.2);
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.fit-content-gativus-network-card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 30px;
+  height: fit-content;
+  gap: 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.gativus-card-image-block {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c8c8c8;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.2);
+}
+.gativus-card-image-block p {
+  margin: 0;
+}
+.gativus-card-image {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 9px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.left-card-image,
+.right-card-image {
+  padding: 10px;
+  width: calc(30% - 20px);
+  background-color: #e9e9e9;
+  height: fit-content;
+  border-radius: 9px;
+  box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.2);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid #c8c8c8;
+}
+.left-card-image:after {
+  content: " ";
+  position: absolute;
+  left: auto;
+  right: -45px;
+  top: 35%;
+  transform: rotate(113deg);
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 80px solid black;
+}
+.right-card-image:after {
+  content: " ";
+  position: absolute;
+  left: -75px;
+  right: auto;
+  top: 0;
+  transform: rotate(-95deg);
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 120px solid black;
 }

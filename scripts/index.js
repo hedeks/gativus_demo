@@ -1,47 +1,24 @@
 const routes = {
   "./": {
     linkLabel: "WITG",
-    content: `<div class="what-is-gativus">
-        <div class="main-gativus-view-title-container">
-          <img
-            class="main-gativus-view-icon"
-            src="./img/2-lines-to-right.svg"
-            alt=""
-          />
-          <h1 class="main-gativus-view-title">Gativus</h1>
-          <img
-            class="main-gativus-view-icon"
-            src="./img/2-lines-to-left.svg"
-            alt=""
-          />
-          <img class="arrow-down" src="./img/two-arrows-down.svg" alt="" />
-        </div>
-
-        <div class="gativus-view-stuff">
-          <div class="view-stuff-description">
-            <p>environment for a research in a technical mind area</p>
-          </div>
-          <div class="view-stuff-art">
-            <img class="stuff-art" src="./img/geo-art.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="what-is-gativus-second">
+    content: `<div class="what-is-gativus-second">
         <div class="second-gativus-view-title-container">
           <img
             class="second-gativus-view-icon"
             src="./img/2-lines-to-right.svg"
             alt=""
           />
-          <h1 class="second-gativus-view-title">Gativus ecosystem</h1>
+          <h1 class="second-gativus-view-title">Gativus</h1>
           <img
             class="second-gativus-view-icon"
             src="./img/2-lines-to-left.svg"
             alt=""
           />
-          <img class="arrow-down" src="./img/two-arrows-down.svg" alt="" />
         </div>
-
+        <h2 class="gativus-description">
+          enviroment for research in a technical mind area
+        </h2>
+        <img src="./img/two-arrows-down.svg" alt="" />
         <div class="second-gativus-view-section">
           <div class="second-gativus-view-section-upper-part">
             <h2 class="second-gativus-view-section-first-title">
@@ -51,46 +28,45 @@ const routes = {
           <div class="second-gativus-view-section-main-part">
             <div class="second-gativus-view-section-main-part-top">
               <!-- wtg = what is the gativus -->
-              <div class="gtom wtg_view_item">
+              <div class="gtom wtg_view_item" id="gtom">
                 <div class="wtg_view_img_container wtg_gtom"></div>
                 <div class="wtg_view_title">
-                  <b>GTOM</b> - <b>G</b>ativus <b>T</b>heory <b>O</b>f
-                  <b>M</b>ind
+                  <b>G</b>ativus <b>T</b>heory <b>O</b>f <b>M</b>ind -
+                  <b>GTOM</b>
                 </div>
                 <div class="wtg_view_description">
                   A set of facts and conclusions used to explain phenomenon of
                   human conscience. From cellular level to the knowledge.
                 </div>
               </div>
-              <div class="gnet wtg_view_item">
-                <div class="wtg_view_img_container wtg_gnet"></div>
+              <div class="gnet wtg_view_item" id="ganm">
+                <div class="wtg_view_img_container wtg_gnet_spec"></div>
                 <div class="wtg_view_title">
-                  <b>GNET</b> - <b>G</b>ativus <b>NET</b>work
+                  <b>GA</b>tivus <b>N</b>etwork <b>M</b>odel - <b>GANM</b>
                 </div>
                 <div class="wtg_view_description">
-                  The Network of unified digital instances, which covers all
-                  known layers, such as cellular, spike, learning and knowledge,
-                  defined in GTOM.
+                  Specification of GNET, detailed requirements description, constructions and functionality.
                 </div>
               </div>
-              <div class="gate wtg_view_item">
+              <div class="gate wtg_view_item" id="gate">
                 <div class="wtg_view_img_container wtg_gate"></div>
                 <div class="wtg_view_title">
-                  <b>GATE</b> - <b>GAT</b>ivus <b>E</b>dge
+                  <b>GAT</b>ivus <b>E</b>dge - <b>GATE</b>
                 </div>
                 <div class="wtg_view_description">
                   Material piece of equipment, capable to host the GNET network
                   entities.
                 </div>
               </div>
-              <div class="gaar wtg_view_item">
-                <div class="wtg_view_img_container wtg_gaar"></div>
+              <div class="gnet wtg_view_item" id="gnet">
+                <div class="wtg_view_img_container wtg_gnet"></div>
                 <div class="wtg_view_title">
-                  <b>GAAR</b> - <b>GA</b>tivus <b>AR</b>chitect
+                  <b>G</b>ativus <b>NET</b>work - <b>GNET</b>
                 </div>
                 <div class="wtg_view_description">
-                  Collection of tools to communicate to the GNET. To create
-                  initial network, see, analyze and amend existing one.
+                  The Network of unified digital instances, which covers all
+                  known layers, such as cellular, spike, learning and knowledge,
+                  defined in GTOM.
                 </div>
               </div>
             </div>
@@ -115,7 +91,7 @@ const routes = {
               <div class="wtg_view_purpose_item neuromorphic">
                 <div class="wtg_view_purpose_item_title_container">
                   <h2 class="wtg_view_purpose_item_title">
-                    Neuromorphic machine
+                    Neuromorphic device
                   </h2>
                   <img src="./img/neuromorphic.png" height="40px" alt="" />
                 </div>
@@ -131,14 +107,69 @@ const routes = {
             </div>
           </div>
           <div class="second-gativus-view-section-bottom-part">
-            <h2 class="second-gativus-view-section-second-title">Purpose</h2>
+            <h2 class="second-gativus-view-section-second-title">The purpose</h2>
           </div>
         </div>
       </div>`,
   },
   "./gtom": {
     linkLabel: "GTOM",
-    content: `GTOM`,
+    content: `<div class="gativus-page-container">
+        <div class="second-gativus-view-title-container">
+          <img
+            class="second-gativus-view-icon"
+            src="./img/2-lines-to-right.svg"
+            alt=""
+          />
+          <h1 class="gativus-title-40px">Gativus Theory Of Mind</h1>
+          <img
+            class="second-gativus-view-icon"
+            src="./img/2-lines-to-left.svg"
+            alt=""
+          />
+        </div>
+        <img src="./img/two-arrows-down.svg" alt="" />
+
+        <div class="fit-content-gativus-network-card">
+          <div class="gativus-network-card-title-container">
+            <h2 class="gativus-network-card-title">
+              <b>Gativus</b> has a vision of artificial intelligence based on
+              <u>nature of human consciousness.</u>
+            </h2>
+          </div>
+
+          <div class="fit-content-gativus-network-card-main">
+            <p class="gativus-card-subtitle">
+              Most fundamental is the fact, that human’s brain simultaneously
+              host two quite different networks: <b>neural network</b> and <b>concept
+              network.</b>
+            </p>
+            <div class="gativus-card-image-block">
+              <div class="gativus-card-image">
+                <div class="left-card-image">
+                  <b>Consciousness</b>(concept network)
+                </div>
+                <img src="./img/brain-out.png" height="300px" alt="" />
+                <div class="right-card-image">
+                  <b>Neural network</b>(cellular, spike and parameter network)
+                </div>
+              </div>
+              <p>Figure 1: Two Networks in one brain</p>
+            </div>
+            <p class="gativus-card-subtitle">
+              Research in neural networks has a lot of achievements (such as
+              GPT, LLM, etc.), whilst the concept/knowledge networks can’t boast
+              significant results (very restricted solution, such as RDF/OWL
+              description).
+            </p>
+            <p class="gativus-card-subtitle">
+              Gativus is making attempt to <b>converge these two networks into</b>
+              <u>unified common network</u> and give the researches <b>an opportunity to
+              find association between</b> <u>neural</u> and <u>concept</u> layers.
+            </p>
+          </div>
+        </div>
+      </div>`,
   },
   "./gnet": {
     linkLabel: "GNET",
@@ -169,11 +200,8 @@ const routes = {
           </div>
           <div class="gativus-network-card-main">
             <p class="gativus-network-card-main-description">
-              GNET is a formalized reflection of the
-              <u><b>Gativus Theory of Mind</b></u
-              >, which is expected to be feasible for technical implementation
-              with <u><b>GATE</b></u
-              >.
+              GNET is a formalized reflection of the <br>
+              <u><b>Gativus Theory of Mind</b></u>
             </p>
             <div class="gtom-gnet-nddis">
               <div class="gtom-gnet-nddis-block">
@@ -191,15 +219,32 @@ const routes = {
                   src="./img/gnet-main.png"
                   alt=""
                 />
-                <p>GNET</p>
+                <p>GANM</p>
               </div>
               <div class="two-arrows-towards">
-                <img
+                <!-- <img
                   src="./img/arrow-right.svg"
                   style="transform: rotate(180deg)"
                   height="15px"
                   alt=""
+                /> --!>
+                <img src="./img/arrow-right.svg" height="15px" alt="" />
+              </div>
+              <div class="gtom-gnet-nddis-block"> 
+                  <img
+                  class="gtom-gnet-nddis-img"
+                  src="./img/gate.jpg"
+                  alt=""
                 />
+                <p>GATE</p>
+              </div>
+              <div class="two-arrows-towards">
+                <!-- <img
+                  src="./img/arrow-right.svg"
+                  style="transform: rotate(180deg)"
+                  height="15px"
+                  alt=""
+                /> --!>
                 <img src="./img/arrow-right.svg" height="15px" alt="" />
               </div>
               <div class="gtom-gnet-nddis-block">
@@ -208,43 +253,8 @@ const routes = {
                   src="./img/gnet-second-view.png"
                   alt=""
                 />
-                <p>Related NDDI's</p>
+                <p>GNET</p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <img src="./img/two-arrows-down.svg" alt="" />
-
-        <div class="gativus-network-second-card gativus-network-card">
-          <div class="gativus-network-card-title-container">
-            <h2 class="gativus-network-card-title">
-              <b>GNET</b> shows convergence of two facts without an obvious
-              connection:
-            </h2>
-          </div>
-
-          <div class="gativus-network-card-facts-container">
-            <div class="gativus-network-card-fact">
-              <div class="gativus-network-card-fact-description">
-                All that we can see <u>in the brain</u>: <b> neural network</b>
-              </div>
-              <div class="gativus-network-card-fact-image-brain"></div>
-            </div>
-            <div class="two-arrows-towards">
-              <img
-                src="./img/arrow-right.svg"
-                style="transform: rotate(180deg)"
-                height="15px"
-                alt=""
-              />
-              <img src="./img/arrow-right.svg" height="15px" alt="" />
-            </div>
-            <div class="gativus-network-card-fact">
-              <div class="gativus-network-card-fact-description">
-                Humanity has <u>dynamic system of knowledge</u>: <b>ontology</b>
-              </div>
-              <div class="gativus-network-card-fact-image-knowledge"></div>
             </div>
           </div>
         </div>
@@ -476,20 +486,32 @@ const routes = {
 const app = document.querySelector("#app");
 const nav = document.querySelector("#nav");
 
-const renderContent = (route) => (app.innerHTML = routes[route].content);
+const renderContent = (route) => {
+  app.innerHTML = routes[route].content;
 
+  document.querySelectorAll(".wtg_view_item").forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      item.classList.add("hovered");
+    });
+    item.addEventListener("mouseout", () => {
+      item.classList.remove("hovered");
+    });
+  });
+};
 const navigate = (e) => {
+  let particles = document.querySelector("#particles-js");
   const route = `./${e.target.id.toLowerCase()}`;
   window.history.pushState({}, "", route);
   app.style.opacity = 0;
-  let particles = document.querySelector("#particles-js");
+  app.style.transform = "translateY(-3px)";
   particles.style.opacity = 0;
   setTimeout(() => {
     scrollTo({ top: 0 });
     renderContent(route);
-    particles.style.opacity = 1;
+    app.style.transform = "translateY(0)";
     app.style.opacity = 1;
-  }, 400);
+    particles.style.opacity = 1;
+  }, 500);
 };
 
 const registerNavLinks = () => {
