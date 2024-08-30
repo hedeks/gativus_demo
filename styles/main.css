@@ -52,7 +52,7 @@
   align-items: center;
   font-size: 20px;
   width: fit-content;
-  color: #555555;
+  color: #444444;
   content: "\EC27";
 }
 .link-gaar:before {
@@ -78,6 +78,7 @@ body {
   /* overflow-y: hidden; */
   user-select: none;
   background: #f9f9f9;
+  color: #333333;
 }
 #particles-js {
   position: fixed;
@@ -156,8 +157,15 @@ body {
   line-height: 1;
   transition: all 0.4s cubic-bezier(0.705, 0.01, 0, 0.915);
 }
+.header-link:hover {
+  opacity: 0.8;
+}
 .active-link {
-  color: black;
+  color: black !important;
+}
+.active-link p {
+  color: black !important;
+  transition: all 0.4s cubic-bezier(0.705, 0.01, 0, 0.915);
 }
 .active-link:before {
   color: black;
@@ -372,6 +380,7 @@ body {
   padding: 10px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.705, 0.01, 0, 0.915);
+  background-color: white;
 }
 /* .wtg_view_description {
   width: 300px;
@@ -512,6 +521,16 @@ body {
   font-weight: 400;
   font-size: 24px;
 }
+.gativus-network-card-title-container_w_t_border {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  width: 100%;
+  border-bottom: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+}
 .gativus-network-card-main {
   background-color: #fafafa;
   height: 215px;
@@ -523,6 +542,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .gativus-network-card-main-description {
   font-size: 22px;
@@ -531,7 +551,6 @@ body {
   padding: 10px;
 }
 .gtom-gnet-nddis {
-  width: 50%;
   height: 100%;
   background-color: #ffffff;
   display: flex;
@@ -699,15 +718,19 @@ body {
 .nddi-vbs {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  gap: 30px;
 }
 
 .nddi-vbs-info {
   padding: 20px;
-  width: calc(100% - 40px);
+  width: calc(80% - 40px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
+  margin: auto;
 }
 .nddi-vbs-info p {
   margin: 0;
@@ -815,6 +838,7 @@ body {
 }
 
 .hovered {
+  border: 1px solid #c8c8c8;
   transform: translateY(-2px);
   box-shadow: 0px 5px 10px 2px rgba(109, 109, 109, 0.2);
 }
@@ -827,6 +851,16 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  width: 100%;
+  height: calc(100vh - 107px);
+}
+.gativus-page-container-center {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: calc(100vh - 107px);
 }
@@ -857,7 +891,8 @@ body {
 .gativus-card-subtitle {
   font-weight: 400;
   font-size: 20px;
-  margin: 0;
+  margin: auto;
+  padding: 0 10px;
 }
 .fit-content-gativus-network-card {
   width: 90%;
@@ -869,14 +904,15 @@ body {
   box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.2);
   border-radius: 15px;
   background: #ffffff;
+  pointer-events: auto;
 }
 
 .fit-content-gativus-network-card-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   background: #ffffff;
-  padding: 30px;
+  padding: 30px 30px;
   height: fit-content;
   gap: 30px;
   border-bottom-right-radius: 20px;
@@ -889,6 +925,7 @@ body {
   gap: 20px;
   padding: 20px;
   border-radius: 9px;
+  margin: auto;
   box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.2);
 }
 .gativus-card-image-block p {
@@ -939,4 +976,154 @@ body {
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
   border-bottom: 120px solid black;
+}
+
+.gtom-card {
+  width: 30%;
+  border: 1px solid #c8c8c8;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.2);
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+.gtom-glln-cards {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  gap: 0px;
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+.gtom-card p:first-of-type {
+  font-weight: 800;
+}
+
+.hr {
+  color: #c8c8c8;
+  border: 0;
+  border-top: 1px solid #c8c8c8;
+}
+
+.gativus-network-card-another-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 22px;
+}
+.gativus-network-card-another-title-container {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  width: 100%;
+  border-bottom: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+}
+.gativus-card-text {
+  font-weight: 400 !important;
+  font-size: 18px;
+  margin: 0;
+  padding: 0 30px;
+}
+
+u {
+  background-color: #e6e6e6;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.25;
+  width: fit-content;
+  padding: 1px 3px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.gativus-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal_window {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  background: rgba(233, 233, 233, 0.8);
+  z-index: 1000;
+  animation: modal_in 0.4s cubic-bezier(0.705, 0.01, 0, 0.915);
+}
+
+@keyframes modal_in {
+    0% {
+      background: rgba(161, 161, 161, 0);
+    }
+    100% {
+      background: rgba(233, 233, 233, 0.8);
+    }
+}
+
+.modal_window_out {
+  animation: modal_out 0.4s cubic-bezier(0.705, 0.01, 0, 0.915);
+}
+@keyframes modal_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.contact-email-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  user-select: text;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
+}
+.contact-form-input {
+  font-family: "Consolas";
+  font-size: 14px;
+  box-shadow: 0px 0px 2px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 7px;
+  background-color: #f9f9f9;
+  border: 1px solid #c8c8c8;
+  padding: 5px;
+  transition: all 0.4s cubic-bezier(0.705, 0.01, 0, 0.915);
+
+}
+.contact-form-input:focus {
+  outline: 1px solid black;
+}
+#message {
+  height: 150px;
+  resize: none;
+}
+.contact-form-input-button {
+  font-family: "Consolas";
+  font-size: 16px;
+  background-color: #575757;
+  border: 1px solid #c8c8c8;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 0px rgba(34, 60, 80, 0.2);
+  padding: 5px;
+  transition: all 0.4s cubic-bezier(0.705, 0.01, 0, 0.915);
+}
+.contact-form-input-button:hover {
+  filter: invert(1);
 }
