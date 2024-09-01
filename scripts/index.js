@@ -155,7 +155,6 @@ const routes = {
                   <b>Neural network</b>(cellular, spike and parameter network)
                 </div>
               </div>
-              <p>Figure 1: Two Networks in one brain</p>
             </div>
             <p class="gativus-card-subtitle">
               Research in neural networks has a lot of achievements (such as
@@ -166,7 +165,7 @@ const routes = {
             <p class="gativus-card-subtitle">
               Gativus is making attempt to
               <b>converge these two networks into</b>
-              <u>unified common network</u> and give the researches
+              unified common network - <u>GNET</u> and give the researches
               <b>an opportunity to find association between</b>
               <u>neural</u> and <u>concept</u> layers.
             </p>
@@ -291,6 +290,10 @@ const routes = {
               GTOM consider that Knowledge entities KLEN are based on RDF’s
               triples, with some extensions:
             </p>
+            <video width="auto" height="550" class="video" controls>
+              <source src="./assets/animation_first_render.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
             <ul class="gativus-card-text" class="gativus-ul">
               <li>
                 the predicate – would be various types, and represents Targets,
