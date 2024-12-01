@@ -3,34 +3,376 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./favicon.ico" />
     <title>Gativus</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/page_slider.js"></script>
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="scripts/particles.min.js"></script>
   </head>
-
+  <style>
+    section > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 7vw;
+      font-family: "Consolas";
+      text-transform: uppercase;
+      color: #111;
+    }
+  </style>
   <body>
-    <header class="gativus-header">
+    <div id="particles-js" style="opacity: 0.4"></div>
+    <div class="slides">
+      <section id="what-is-the-gativus">
+        <div class="what-is-gativus-second">
+            <div class="second-gativus-view-title-container">
+              <img
+                class="second-gativus-view-icon"
+                src="./img/2-lines-to-right.svg"
+                alt=""
+              />
+              <h1 class="second-gativus-view-title">Gativus</h1>
+              <img
+                class="second-gativus-view-icon"
+                src="./img/2-lines-to-left.svg"
+                alt=""
+              />
+            </div>
+            <h2 class="gativus-description">
+              enviroment for research in a technical mind area
+            </h2>
+            <img src="./img/two-arrows-down.svg" alt="" />
+            <div class="second-gativus-view-section">
+              <div class="second-gativus-view-section-main-part">
+                <div class="second-gativus-view-section-main-part-top">
+                  <div class="gtom wtg_view_item" data-link="gtom">
+                    <div class="wtg_view_img_container wtg_gtom"></div>
+                    <div class="wtg_view_title">
+                      <b>G</b>ativus <b>T</b>heory <b>O</b>f <b>M</b>ind -
+                      <b>GTOM</b>
+                    </div>
+                  </div>
+                  <div class="gnet wtg_view_item" data-link="gnet">
+                    <div class="wtg_view_img_container wtg_gnet"></div>
+                    <div class="wtg_view_title">
+                      <b>G</b>ativus <b>NET</b>work - <b>GNET</b>
+                    </div>
+                  </div>
+                  <div class="gate wtg_view_item" data-link="gate">
+                    <div class="wtg_view_img_container wtg_gate"></div>
+                    <div class="wtg_view_title">
+                      <b>Gat</b>ivus <b>E</b>dge - <b>GATE</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="second-gativus-view-section-bottom-part">
+                <h2 class="second-gativus-view-section-second-title">Gativus ecosystem</h2>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="gtom"><div class="gativus-page-container">
+        <div class="second-gativus-view-title-container">
+          <img
+            class="second-gativus-view-icon"
+            src="./img/2-lines-to-right.svg"
+            alt=""
+          />
+          <h1 class="gativus-title-40px">Gativus Theory Of Mind</h1>
+          <img
+            class="second-gativus-view-icon"
+            src="./img/2-lines-to-left.svg"
+            alt=""
+          />
+        </div>
+        <img src="./img/two-arrows-down.svg" alt="" />
+
+        <div class="fit-content-gativus-network-card">
+          <div class="gativus-network-card-title-container">
+            <h2 class="gativus-network-card-title">
+              <b>Gativus Theory of Mind</b> has a vision of artificial
+              intelligence based on
+              nature of human consciousness.
+            </h2>
+          </div>
+
+          <div class="fit-content-gativus-network-card-main">
+            <p class="gativus-card-subtitle">
+              Most fundamental is the fact, that human’s brain simultaneously
+              host two quite different networks: <b>neural network</b> and
+              <b>concept network.</b>
+            </p>
+            <div class="gativus-card-image-block">
+              <div class="gativus-card-image">
+                <div class="left-card-image">
+                  <b>Consciousness</b>(concept network)
+                </div>
+                <img src="./img/brain-out.png" height="300px" alt="" />
+                <div class="right-card-image">
+                  <b>Neural network</b>(cellular, spike and parameter network)
+                </div>
+              </div>
+            </div>
+            <p class="gativus-card-subtitle">
+              Research in neural networks has a lot of achievements (such as
+              GPT, LLM, etc.), whilst the concept/knowledge networks can’t boast
+              significant results (very restricted solution, such as RDF/OWL
+              description).
+            </p>
+            <p class="gativus-card-subtitle">
+              Gativus is making attempt to
+              <b>converge these two networks into</b>
+              unified common network - <u>GNET</u> and give the researches
+              <b>an opportunity to find association between</b>
+              <u>neural</u> and <u>concept</u> layers.
+            </p>
+          </div>
+        </div>
+      </section>
+        <section id="gtom-2">
+            <div class="fit-content-gativus-network-card">
+                <div class="gativus-network-card-title-container">
+                  <h2 class="gativus-network-card-title">
+                    <b>G</b>ativus <b>L</b>ow <b>L</b>evel <b>N</b>etwork -
+                    <b>GLLN</b>
+                  </h2>
+                </div>
+                <div class="fit-content-gativus-network-card-main">
+                  <p class="gativus-card-subtitle">
+                    <b>Gativus Theory of Mind</b> outlines <b>GLLN</b> - three
+                    low-level networks (associated with neural networks term),
+                    comprising of S-V-A components:
+                  </p>
+                  <div class="gtom-glln-cards">
+                    <div class="gtom-card">
+                      <p>S - Structure (Cell information)</p>
+                      <p>
+                        Cell information, actually coded by DNA, propagated and
+                        further creating cellular network;
+                      </p>
+                      <hr width="100%" class="hr" />
+                      <p style="height: 100px">
+                        We have formed an understanding of the existence of a cellular
+                        network, having a specific description using
+                        <b>S-components.</b>
+                      </p>
+                    </div>
+                    <div class="gtom-card">
+                      <p>V - Value (Learning Parameters)</p>
+                      <p>
+                        Learning parameters, which would modify behavior of the cell.
+                      </p>
+                      <hr width="100%" class="hr" />
+                      <p style="height: 100px">
+                        The created cellular network is capable of receiving and
+                        transmitting signals <b>(V values)</b> using corresponding
+                        <b>V-relations.</b> In a sense, this is analogous to a memory
+                        cell and an electrical wire connecting the output to the
+                        input.
+                      </p>
+                    </div>
+                    <div class="gtom-card">
+                      <p>A - Activity (Spikes)</p>
+                      <p>
+                        Spikes between axons and dendrites, creating another network
+                        above cellular one;
+                      </p>
+                      <hr width="100%" class="hr" />
+                      <p style="height: 100px">
+                        To ensure the processing of inputs, we have
+                        <b>A-components</b>
+                        (activities) - analogues of code (programs) that can be
+                        executed by an existing data processor.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="gativus-card-subtitle"><b>Additions:</b></p>
+                  <p class="gativus-card-text">
+                    Only spike network have the association of electrical conductivity
+                    of signals, and would be seemed as something similar to electrical
+                    networks relaying signals through the network. As soon as spikes
+                    signify the value of the cell’s function – they are considered as
+                    of the value and defined as v-relations in Gativus terms.
+                  </p>
+                  <p class="gativus-card-text">
+                    But at the same time, structural code – even though is not
+                    conducted in spike-like way, but still propagates the network.
+                    Therefore, structure data or S-relation, in Gativus terms, is
+                    considered to be a virtual delivery of structure construction data
+                    to the hosting environment, allowing growth virtual (digital)
+                    cell.
+                  </p>
+                  <p class="gativus-card-text">
+                    Some values, such as dendrites weights, can be defined as a
+                    content of internal containers, which would be changed or
+                    memorized as a process of learning. As soon as Gativus already
+                    introduced value containers, these learning data can be stored in
+                    those containers. However, there is no v-relation, but new
+                    capability of the cell.
+                  </p>
+                </div>
+              </div>
+        </section>
+        <section id="gtom-3">
+          <div class="fit-content-gativus-network-card">
+            <div class="gativus-network-card-title-container">
+              <h2 class="gativus-network-card-title">
+                <b>G</b>ativus <b>Co</b>gnitive <b>N</b>etwork - <b>GCON</b>
+              </h2>
+            </div>
+            <div class="fit-content-gativus-network-card-main">
+              <p class="gativus-card-subtitle">
+                GCON consists of Knowledge Entities - <u>KLEN</u>
+              </p>
+              <p class="gativus-card-subtitle">
+                KLEN are based on RDF’s
+                triples / Class diagram, with some extensions:
+              </p>
+              <video width="auto" height="550" class="video" controls>
+                <source src="./assets/animation_first_render.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+              </video>
+            
+            </div>
+          </div>
+        </section>
+      <section id="gnet"><div class="gativus-network-page-container">
+        <div class="gativus-network-title-container">
+          <div class="gativus-network-title-container-sub">
+            <img
+              class="gativus-network-title-icon"
+              src="./img/2-lines-to-right.svg"
+              alt=""
+            />
+            <h1 class="gativus-network-title">Gativus network</h1>
+            <img
+              class="gativus-network-title-icon"
+              src="./img/2-lines-to-left.svg"
+              alt=""
+            />
+          </div>
+          <img src="./img/two-arrows-down.svg" alt="" />
+        </div>
+        <div class="nddi-container">
+            <div class="nddi-container-title-container">
+              <p class="nddi-container-title">
+                The entire network is built from a unified <b>NDDI's</b> for all
+                layers of the overall network.
+              </p>
+            </div>
+  
+            <div class="nddi-info">
+              <img src="./img/nddi.png" alt="" />
+              <div class="nddi-description">
+                <p>
+                  <b>NDDI</b> (<b>N</b>etwork <b>D</b>igital <b>D</b>omain
+                  <b>I</b>nstance) – Is an addressable instance, created and
+                  persistently existing under the Gativus domain. <br /><br />Each
+                  NDDI has a global unique name (UNON - Unique Node Name). UNON's
+                  are IPv6 addresses. The relationship between NDDI's are
+                  established between the internal components of NDDI's which form
+                  connection points (Point Of Connection - POCN) to participate in
+                  a Relationship. Point of Connection (POCN) brings a specific
+                  internal component of NDDI's to the surface of the node and
+                  allows it to participate in the construction of a Gativus
+                  Network (GATN). <br /><br />Currently, 6 types of functional
+                  internal components have been identified, grouped into
+                  corresponding sections. The components within each section have
+                  different properties and are interconnected with each other to
+                  achieve the required implementation of an NDDI.
+  
+                  <br /><br />These types are:
+                </p>
+                <ol>
+                  <li>
+                    V - Information Values stored in addressable containers.
+                  </li>
+                  <li>
+                    B - Autonomous Behavior — the internal response of an NDDI
+                    when receiving new changes in Information Values.
+                  </li>
+                  <li>
+                    S - Structure — The skeletal information of an NDDI sufficient
+                    to create another instance of itself on a Gativus Edge device
+                    (GATE).
+                  </li>
+                  <li>
+                    G - Network Behavior Security Management - Rules and security
+                    acting as the controller of relationships between NDDI's.
+                  </li>
+                  <li>
+                    T - Network Behavior Target Management - The external response
+                    of an NDDI when receiving changes in Information Values.
+                  </li>
+                  <li>A - Aggregation</li>
+                </ol>
+              </div>
+            </div>
+        </div>
+        
+    </section>
+      <section id="gate"><span>GATE</span> </section>
+        <section id="contact_us">
+          <div class="gativus-page-container-center"> 
+            <div class="fit-content-gativus-network-card">
+      <div class="gativus-network-card-title-container">
+        <h2 class="gativus-network-card-title">
+          If you have any questions or suggestions, you can contact us:
+        </h2>
+      </div>
+
+      <div class="fit-content-gativus-network-card-main">
+        <div class="contact-email-block">
+          <img src="./img/logo.jpg" class="logo-section-img" alt="" />  
+          <p class="gativus-card-subtitle">
+          Email: contact@gativus.com
+          </p>
+        </div>
+      </div>
+      <div class="gativus-network-card-title-container_w_t_border">
+      <h2 class="gativus-network-card-title">
+      You can also fill out the form below to send us a message.
+      </h2>
+      </div>
+      <div class="fit-content-gativus-network-card-main">
+        <form class="contact-form">
+          <label for="email">Your name:</label>
+          <input class="contact-form-input" type="email" id="email" name="email" required>
+          <label for="email">Your email:</label>
+          <input class="contact-form-input" type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea class="contact-form-input" id="message" name="message" required></textarea>
+          <input class="contact-form-input-button" type="submit" value="Contact Us">
+        </form>
+      </div>
+    </div>
+           </div>
+        </section>
+    </section>
+  </div>
+  </body>
+  <script>
+    let sidebar = document.createElement('sidebar');
+    sidebar.innerHTML = `<sidebar class="gativus-sidebar">
       <!-- 1) logo + title -->
-      <div class="header-logo-section header-link" id="WITG">
+      <img src='./img/close_icon.png' height='32' class='button close_icon'>
+      <div class="header-logo-section header-link" data-link='what-is-the-gativus' id="WITG">
         <img src="./img/logo.jpg" class="logo-section-img" alt="" />
         <p class="logo-section-title">Gativus</p>
       </div>
       <!-- 2) link to wiki -->
       <div class="header-wiki-section">
         <a class="wiki-section-link" href="https://en.wiki.gativus.com"
-          >/wiki<img src="./img/wiki-to-icon.svg" alt=""
+          >to /wiki<img src="./img/wiki-to-icon.svg" alt=""
         /></a>
       </div>
       <!-- 3) links to landing sections -->
-      <div class="header-links" id="nav">
-        <p class="link-about header-link active-link" id="WITG">
-          What is The Gativus
-        </p>
-        <p class="link-gtom header-link" id="GTOM">GTOM</p>
-        <p class="link-gnet header-link" id="GNET">GNET</p>
-        <p class="link-gate header-link" id="GATE">GATE</p>
-        <p class="link-gaar header-link" id="GAAR">GAAR</p>
+      <div class="sidebar-links" id="nav">
+        <p class="link-gtom header-link" id="GTOM" data-link='gtom'>GTOM</p>
+        <p class="link-gnet header-link" id="GNET" data-link='gnet'>GNET</p>
+        <p class="link-gate header-link" id="GATE" data-link='gate'>GATE</p>
       </div>
       <!-- 4) language select -->
       <div class="header-language-section">
@@ -38,17 +380,59 @@
         <img src="./img/arrow_down.svg" alt="" />
       </div>
       <!-- 5) contact us section -->
-      <div class="header-contact-section header-link" id="contact_us_link">
+      <div class="header-contact-section header-link" data-link='contact_us' id="contact_us_link">
         <p class="contact-section-title">Contact Us</p>
         <img class="contact-section-icon" src="./img/arrow-right.svg" alt="" />
       </div>
-    </header>
-    <div id="particles-js" style="opacity: 0"></div>
-    <section class="main-gativus-view" id="app" style="opacity: 0">
-      Coming soon, development underway
-    </section>
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/scroll.js"></script>
-    <script src="./scripts/particles_init.js"></script>
-  </body>
+    </sidebar>`
+    var mySlider = slider(".slides");
+    document.addEventListener('DOMContentLoaded', ()=>{
+
+      document.querySelectorAll(".button").forEach((item) => {
+        item.onclick = ()=>{
+          if (item.id === 'up_button'){
+            mySlider.changeSlide(-1)
+          }
+          else if (item.id === 'down_button'){
+            mySlider.changeSlide(1)
+          }
+          else if (item.id === 'sidebar_button'){
+            if (document.querySelector('.gativus-sidebar')){
+              sidebar.remove()
+               setTimeout(()=>{
+                  sidebar.remove()
+                  sidebar.classList.remove('sidebar-out');
+                },500)
+            } else {
+              document.body.appendChild(sidebar)
+              document.querySelectorAll('.header-link').forEach((item)=>{
+                item.onclick = ()=>{
+                  mySlider.gotoSlide(`#${item.getAttribute('data-link')}`)
+                }
+              })
+              document.querySelector('.close_icon').onclick = ()=>{
+                sidebar.classList.add('sidebar-out');
+                setTimeout(()=>{
+                  sidebar.remove()
+                  sidebar.classList.remove('sidebar-out');
+                },500)
+              }
+            }
+          }
+        }
+      })
+      document.querySelectorAll(".wtg_view_item").forEach((item) => {
+      item.addEventListener("mouseover", () => {
+        item.classList.add("hovered");
+      });
+      item.addEventListener("mouseout", () => {
+        item.classList.remove("hovered");
+      });
+      item.addEventListener('click', ()=>{
+        mySlider.gotoSlide(`#${item.getAttribute('data-link')}`)
+      })
+    });
+    })
+  </script>
+  <script src="./scripts/particles_init.js"></script>
 </html>
