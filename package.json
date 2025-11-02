@@ -1,0 +1,23 @@
+{
+  "name": "gativus_preview_website",
+  "version": "0.0.1",
+  "description": "presentation of gativus concepts and small description",
+  "homepage": "https://github.com/hedeks/gativus_demo#readme",
+  "bugs": {
+    "url": "https://github.com/hedeks/gativus_demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hedeks/gativus_demo.git"
+  },
+  "license": "ISC",
+  "author": "Kirill Khitsko",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "three.js": "^0.77.1"
+  }
+}
