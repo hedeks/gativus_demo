@@ -9,8 +9,17 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="scripts/particles.min.js"></script>
   </head>
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "three/": "./node_modules/three/"
+        }
+    }
+  </script>
+  <script type="module" src="./scripts/main.js"></script>
   <body>
-    <div id="particles-js" style="opacity: 0.4"></div>
+    <div id="particles-js" style="opacity: 0.8"></div>
     <div class="slides">
       <section id="what-is-the-gativus">
         <div class="what-is-gativus-second">
@@ -251,7 +260,7 @@
             </div>
   
             <div class="nddi-info">
-              <img src="./img/nddi.png" alt="" />
+              <div class="render"> <img src="./img/nddi.png" alt="" /></div>
               <div class="nddi-description">
                 <p>
                   <b>NDDI</b> (<b>N</b>etwork <b>D</b>igital <b>D</b>omain
