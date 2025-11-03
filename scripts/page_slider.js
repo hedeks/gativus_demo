@@ -192,7 +192,6 @@ var slider = function (sliderElement) {
     ) {
       return;
     }
-
     // change page
     currentSlide += direction;
     isChanging = true;

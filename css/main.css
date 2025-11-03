@@ -3,6 +3,10 @@
   src: url("../assets/fonts/Consolas.ttf"); 
 }
 @font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+@font-face {
   font-family: Poppins-Medium;
   src: url("../assets/fonts/Poppins-Medium.ttf");
 }
@@ -26,6 +30,8 @@
 
 .p-text-indent {
   text-indent: 47px; /* 1.25 cm */
+  text-align: justify;
+  text-justify: newspaper;
 }
 
 
@@ -109,6 +115,7 @@ body {
   user-select: none;
   color: #333333;
   box-sizing: border-box;
+  transition: opacity 100ms cubic-bezier(0.48, -0.01, 0.2, 0.91);
 }
 #particles-js {
   position: fixed;
@@ -166,6 +173,7 @@ body {
   height: 66px;
 }
 .logo-section-title {
+  font-family: var(--header-font-family);
   font-size: 29px;
   font-weight: 900;
   color: #454545;
@@ -679,7 +687,7 @@ body {
 /* NDDI view on GNET page */
 
 .nddi-container {
-  gap: 40px;
+  gap: 10px;
   background-color: #ffffff;
   width: 676px;
   border: 1px solid #c8c8c8;
@@ -1110,9 +1118,9 @@ body {
 u {
   background-color: #e6e6e6;
   margin: 0;
-  display: inline-flex;
   align-items: center;
   line-height: 1.25;
+  font-family: "Consolas";
   width: fit-content;
   padding: 1px 3px;
   text-decoration: none;
@@ -1238,8 +1246,8 @@ u {
 }
 .render {
   margin: auto;
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
 }
 .render canvas {
   width: 100% !important;
