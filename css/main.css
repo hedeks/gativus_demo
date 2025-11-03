@@ -709,11 +709,12 @@ body {
 }
 .nddi-info {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  padding: 0 30px;
   align-items: center;
   justify-content: space-around;
 }
-.nddi-info img {
+.render img {
   width: 40%;
   margin: 0;
 }
@@ -1234,4 +1235,13 @@ u {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
+}
+.render {
+  margin: auto;
+  height: 500px;
+  width: 500px;
+}
+.render canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
